@@ -1,1 +1,0 @@
-# cryptonext.com
