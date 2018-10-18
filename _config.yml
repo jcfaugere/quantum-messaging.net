@@ -1,0 +1,26 @@
+# Web configuration
+
+exclude:
+  - Makefile
+  - README.md
+  - CNAME
+
+# Defaults
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: "default"
+      og_type: article
+      type: article
+      category: "Others"
+      excerpt_separator: "<!--more-->"
+      prism_languages: []
+
+# Site info
+
+url: https://cryptonext-security.com
+title: Crypto Next
+
