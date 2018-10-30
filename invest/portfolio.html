@@ -5,15 +5,15 @@
 	<link rel="icon" type="image/ico" href="../images/logoicon.png" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Invest project">
+<meta name="description" content="CryptoNext">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/news.css">
-<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
 
@@ -22,25 +22,35 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/news_background.jpg" data-speed="0.8"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="home_content">
-						<div class="home_content_inner">
-							<div class="home_title">The News</div>
-							<div class="home_breadcrumbs">
-								<ul>
-									<li><a href="financial.html">Home</a></li>
-									<li>News</li>
-								</ul>
-							</div>
-						</div>
+		<div class="home_slider_container">
+			
+			<!-- Home Slider -->
+
+			<div class="owl-carousel owl-theme home_slider">
+				
+				
+
+	
+
+
+
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<div class="slider_background" style="background-image:url(../images/quantum_slide4.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<h1>Next Generation of Post-Quantum tested by French Army</h1>
+						<div class="home_slider_text">The Android application has been tested during real experiments performed by French army.</div>
+						<div class="link_button home_slider_button"><a href="#">read more</a></div>
 					</div>
 				</div>
-			</div>
-		</div>
 
+			</div>
+
+			<div class="home_slider_nav home_slider_prev d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_l.png" alt=""></div>
+			<div class="home_slider_nav home_slider_next d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+			
+		</div>
+		
 		<!-- Header -->
 
 		<header class="header">
@@ -55,24 +65,21 @@
 									<div class="logo">
 										<a href="#">
 											<div class="logo_line_1"><span>Crypto</span>Next</div>
-											<div class="logo_line_2">Blockchain</div>
-											<div class="logo_img"><img src="images/logo.png" alt=""></div>
+											<div class="logo_line_2">Post-quantum Cryptography</div>
+											<div class="logo_img"><img src="../images/cryptonextcol.png" alt=""></div>
 										</a>
 									</div>
 								</div>
 								<div class="top_bar_content ml-auto">
-									<div class="main_menu_contact">
-										<div class="main_menu_phone"><img src="images/phone-call.svg" class="svg" alt=""><span>+33 44 27 70 28</span></div>
-										<div class="main_menu_email"><img src="images/envelope.svg" class="svg" alt=""><span>ludovic.perret@</span></div>
-									</div>
-									<div class="main_menu_social">
+									<div class="coins">
 										<ul>
-											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li>NIST Submissions: 69</li>
+											<li>Withdrawn: 6</li>
 										</ul>
+									</div>
+									<div class="register_login">
+										<div class="register"><a href="#">register</a></div>
+										<div class="login"><a href="#">login</a></div>
 									</div>
 								</div>
 								<div class="burger">
@@ -102,7 +109,7 @@
 												</svg>
 											</a>
 											<ul>
-												<li><a href="index.html">Post-quantum Cryptography
+												<li><a href="index.html">Cyber security
 													<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 														 width="9px" height="5px" viewBox="0 0 9 5" enable-background="new 0 0 9 5" xml:space="preserve">
 														<g>
@@ -129,7 +136,7 @@
 											</svg>
 										</a></li>
 										<li class="hassubs">
-											<a href="services.html">services
+											<a href="services.html">Solutions
 												<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 													 width="9px" height="5px" viewBox="0 0 9 5" enable-background="new 0 0 9 5" xml:space="preserve">
 													<g>
@@ -173,7 +180,7 @@
 											</ul>
 										</li>
 										<li class="hassubs">
-											<a href="#">portfolio
+											<a href="services.html">portfolio
 												<svg version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 													 width="9px" height="5px" viewBox="0 0 9 5" enable-background="new 0 0 9 5" xml:space="preserve">
 													<g>
@@ -216,7 +223,7 @@
 												</a></li>
 											</ul>
 										</li>
-										<li><a href="#">news
+										<li><a href="news.html">blog
 											<svg version="1.1" id="Layer_15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="9px" height="5px" viewBox="0 0 9 5" enable-background="new 0 0 9 5" xml:space="preserve">
 												<g>
@@ -235,6 +242,8 @@
 									</ul>
 								</div>
 								<div class="main_menu_contact ml-auto">
+									<div class="main_menu_phone"><img src="images/phone-call.svg" alt=""><span>+33 1 44 27 70 28</span></div>
+									<div class="main_menu_email"><img src="images/envelope.svg" alt=""><span>ludovic.perret@</span></div>
 									<div class="main_menu_search">
 										<div class="main_menu_search_button">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" width="15px" height="15px">
@@ -313,7 +322,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col">
-									<a href="news.html">news</a>
+									<a href="contact.html">blog</a>
 								</div>
 							</div>
 						</div>
@@ -332,117 +341,205 @@
 		</header>
 	</div>
 	
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="intro_image text-lg-right text-center"><img src="../images/exp1.jpg" alt=""></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="intro_content">
+						<div class="intro_title_container">
+							<div class="intro_subtitle">take a look at our</div>
+							<h1 class="intro_title">Next Crypto Generation  tested by French Army</h1>
+						</div>
+						<div class="intro_text">
+							<p>The Post-quantum Android application has been tested during real experiments performed by French army. TThe goal was to test the next generation of communication systems. Our application was only a small part of these experiments. The application has been deployed on the smartphones (Samsung Galaxy S5) of around 100 participants (military, national security, DGA,...) and experimented in various operational scenarios. The experiments were performed through a home-made 4G network deployed on a dedicated site. The first lesson learned is that no problem has been reported regarding the size of the public-key and its transmission on the 4G channel. </p>
+						</div>
+						<div class="link_button intro_button"><a href="#">read more</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+
+	<div class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Testimonials Slider -->
+
+					<div class="services_slider_container">
+						<div class="owl-carousel owl-theme services_slider">
+
+							<!-- Services Item -->
+							<div class="owl-item">
+								<div class="services_item d-flex flex-column align-items-center justify-content-center">
+									<div class="services_item_bg"></div>
+									<div class="services_icon"><img class="svg" src="images/services_3.svg" alt=""></div>
+									<div class="services_title"> Electronic Signature</div>
+									<p class="services_text">The application could be easily extended to perform electronic signatures. In this case, the signature size is 128 bits and the verification will take few microseconds.</p>
+									<div class="services_link"><a href="#">Read More</a></div>
+								</div>
+							</div>
+
+						</div>
+						
+						<div class="services_nav services_prev d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_l.png" alt=""></div>
+						<div class="services_nav services_next d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Converter -->
+
+	<div class="converter">
+		<div class="converter_background parallax-window" data-parallax="scroll" data-image-src="../images/US_Army_Phone_dark.jpg" data-speed="0.8"></div>
+
+		<div class="container">
+			<div class="row">
+			  <div class="col-lg-5">
+					<div class="converter_content">
+						<div class="converter_title_container">
+							<div class="converter_subtitle">take a look at our</div>
+							<h1 class="converter_title">Next Crypto Generation tested by French Army</h1>
+						</div>
+						<div class="converter_text">
+							<p>The Post-quantum Android application has been tested during real experiments performed by French army. TThe goal was to test the next generation of communication systems. Our application was only a small part of these experiments. The application has been deployed on the smartphones (Samsung Galaxy S5) of around 100 participants (military, national security, DGA,...) and experimented in various operational scenarios. The experiments were performed through a home-made 4G network deployed on a dedicated site. The first lesson learned is that no problem has been reported regarding the size of the public-key and its transmission on the 4G channel.</p>
+						</div>
+					</div>
+					
+				</div>
+				<img src="../images/exp1.jpg" width="557" height="371" alt=""/>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Info -->
+
+	<div class="info">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_subtitle">take a look at our</div>
+						<div class="section_title">CryptoNext Solutions</div>
+					</div>
+				</div>
+			</div>
+			<div class="row info_row">
+
+				<!-- Info Item -->
+				<div class="col-lg-4 info_col">
+					<div class="info_item text-center">
+						<div class="info_image"><img src="images/info_1.png" alt=""></div>
+						<div class="info_title">Smartphones</div>
+						<div class="info_text">
+							<p>Sed ut iaculis elit, quis varius mauris. Integer ut ultric ies orci, lobortis egesta s sem. Duis non volutpat arcu. Sed ut iaculis elit, quis varius mauris.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Info Item -->
+				<div class="col-lg-4 info_col">
+					<div class="info_item text-center">
+						<div class="info_image"><img src="images/info_2.png" alt=""></div>
+						<div class="info_title">Electronic Signatures</div>
+						<div class="info_text">
+							<p>Sed ut iaculis elit, quis varius mauris. Integer ut ultric ies orci, lobortis egesta s sem. Duis non volutpat arcu. Sed ut iaculis elit, quis varius mauris.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Info Item -->
+				<div class="col-lg-4 info_col">
+					<div class="info_item text-center">
+						<div class="info_image"><img src="images/info_3.png" alt=""></div>
+						<div class="info_title">Buy or sell orders</div>
+						<div class="info_text">
+							<p>Sed ut iaculis elit, quis varius mauris. Integer ut ultric ies orci, lobortis egesta s sem. Duis non volutpat arcu. Sed ut iaculis elit, quis varius mauris.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
 	<!-- News -->
 
 	<div class="news">
 		<div class="container">
 			<div class="row">
-
-				<!-- News Post -->
-				<div class="col-lg-4 news_col">
-					<div class="news_post">
-						<div class="news_image"><img src="../images/LaRechercheMathsDuSecret.jpg" style="width: 75%; height: 75%" alt=""></div>
-						<div class="news_date d-flex flex-column align-items-center justify-content-center">
-							<div class="news_month">feb</div>
-							<div class="news_day">18</div>
-						</div>
-						<div class="news_content">
-							<div class="news_title">La Recherche: Maths du secret</div>
-							<div class="news_text">
-								<p>À l'heure du bouleversement promis par l'ordinateur quantique, les cryptographes, dans l'industrie et les institutions, s'interrogent. Comment conserver la confidentialité des données numériques si cette machine rend caduc le chiffrement de tous les systèmes utilisés jusqu'ici ?</p>
-							</div>
-						</div>
-						<div class="news_button"><a href="news.html">read more</a></div>
-					</div>
-				</div>
-
-				<!-- News Post -->
-				<div class="col-lg-4 news_col">
-					<div class="news_post">
-						<div class="news_image"><img src="../images/Atos.gif" alt=""></div>
-						<div class="news_date d-flex flex-column align-items-center justify-content-center">
-							<div class="news_month">Jul</div>
-							<div class="news_day">5</div>
-						</div>
-						<div class="news_content">
-							<div class="news_title">Prix Atos-Joseph Fourier</div>
-							<div class="news_text">
-								<p>Récompense l'excellence de travaux dans les domaines de la simulation numérique, l'intelligence artificielle et le calcul quantique. "Pour la catégorie calcul quantique, on compte un seul lauréat (10 000 euros) formé du tandem Jean-Charles Faugère, chercheur à l'Inria, et Ludovic Perret, professeur associé à Sorbonne Université. Cette équipe développe depuis 15 ans des algorithmes de chiffrement basés sur l'informatique quantique pour résister aux futurs systèmes de déchiffrement." (<a href="https://www.lemondeinformatique.fr/actualites/lire-prix-atos-joseph-fourier-2018-les-chercheurs-recompenses-72269.html">in le Monde Informatique</a>)</p>
-							</div>
-						</div>
-						<div class="news_button"><a href="news.html">read more</a></div>
-					</div>
-				</div>
-
-				<!-- News Post -->
-				<div class="col-lg-4 news_col">
-					<div class="news_post">
-						<div class="news_image"><img src="../images/un3536.png" style="width: 75%; height: 75%" alt=""></div>
-						<div class="news_date d-flex flex-column align-items-center justify-content-center">
-							<div class="news_month">Nov</div>
-							<div class="news_day">2017</div>
-						</div>
-						<div class="news_content">
-							<div class="news_title">Enfin ! La revolution quantique</div>
-							<div class="news_text">
-								<p>Les ordinateurs quantiques pourraient devenir réalité en 2018. Les industriels s’emparent de cette nouvelle puissance de calcul et la France se mobilise pour revoir sa sécurité.</p>
-							</div>
-						</div>
-						<div class="news_button"><a href="news.html">read more</a></div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 news_col">
-					<div class="news_post">
-						<div class="news_image"><img src="../images/INF162.gif" style="width: 75%; height: 75%" alt=""></div>
-						<div class="news_date d-flex flex-column align-items-center justify-content-center">
-							<div class="news_month">Nov</div>
-							<div class="news_day">2017</div>
-						</div>
-						<div class="news_content">
-							<div class="news_title">QUANTIQUE : THE NEXT BIG THING(K) </div>
-							<div class="news_text">
-								<p>(<a href="https://www.linformaticien.com/magazine/derniers-numeros/id/45457/l-informaticien-n-162-novembre-2017.aspx">L'informaticien</a>)</p>
-							</div>
-						</div>
-						<div class="news_button"><a href="news.html">read more</a></div>
-					</div>
-				</div>
-
-								<div class="col-lg-4 news_col">
-					<div class="news_post">
-						<div class="news_image"><img src="../images/misc.jpg" style="width: 75%; height: 75%" alt=""></div>
-						<div class="news_date d-flex flex-column align-items-center justify-content-center">
-							<div class="news_month">Apr</div>
-							<div class="news_day">2016</div>
-						</div>
-						<div class="news_content">
-							<div class="news_title">LE GRAND DÉFI DU POST-QUANTIQUE </div>
-							<div class="news_text">
-								<p>En août 2015, la NSA a surpris le monde de la cybersécurité en faisant une annonce très surprenante à l’intention des entreprises et administrations américaines. Elle recommande de préparer le basculement de la cryptographie à clef publique classique fondée sur la théorie des nombres vers des systèmes résistants à l’ordinateur quantique. Depuis, l’organisme de normalisation américain NIST a lancé la course post-quantique avec un appel international pour la création de standards à l’épreuve de l’ordinateur quantique (<a href="https://connect.ed-diamond.com/MISC/MISCHS-013/Le-grand-defi-du-post-quantique"> Misc HS-13</a>)</p>
-							</div>
-						</div>
-						<div class="news_button"><a href="news.html">read more</a></div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row">
 				<div class="col">
-					<div class="page_nums">
-						<ul>
-							<li class="active"><a href="#">01</a></li>
-							<!-- 
-                             <li><a href="#">02</a></li>
-							 <li><a href="#">03	</a></li>
-                            -->
-						</ul>
+					<div class="section_title_container text-center">
+						<div class="section_subtitle">take a look at our</div>
+						<div class="section_title">Latest News in Crypto</div>
 					</div>
 				</div>
+			</div>
+			<div class="row news_row">
+				
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images/news_1.jpg" alt="https://unsplash.com/@silverhousehd">
+						</div>
+						<div class="news_content">
+							<div class="news_title">New Regulations on the Crypto Market</div>
+							<div class="news_text">
+								<p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci.</p>
+							</div>
+						</div>
+						<div class="news_button"><a href="news.html">read more</a></div>
+					</div>
+				</div>
+
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images/news_2.jpg" alt="https://unsplash.com/@silverhousehd">
+						</div>
+						<div class="news_content">
+							<div class="news_title">Good News from the Crypto World</div>
+							<div class="news_text">
+								<p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci.</p>
+							</div>
+						</div>
+						<div class="news_button"><a href="news.html">read more</a></div>
+					</div>
+				</div>
+
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images/news_3.jpg" alt="https://unsplash.com/@silverhousehd">
+						</div>
+						<div class="news_content">
+							<div class="news_title">Bitcoin price goes to the Moon with new laws</div>
+							<div class="news_text">
+								<p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci.</p>
+							</div>
+						</div>
+						<div class="news_button"><a href="news.html">read more</a></div>
+					</div>
+				</div>
+
 			</div>
 		</div>
-		
 	</div>
 
 	<!-- Footer -->
@@ -481,7 +578,7 @@
 							<li><a href="#">Insurance</a></li>
 							<li><a href="#">Trades</a></li>
 							<li><a href="#">Planning</a></li>
-							<li><a href="#">Post-quantum Crypto</a></li>
+							<li><a href="#">Finance</a></li>
 							<li><a href="#">Crypto</a></li>
 						</ul>
 					</div>
@@ -524,10 +621,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="col-md-8 order-md-2 order-1">
 						<nav class="footer_nav d-flex flex-row align-items-center justify-content-md-end">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Home</a></li>
 								<li><a href="about.html">About us</a></li>
 								<li><a href="services.html">Services</a></li>
-								<li><a href="#">Blog</a></li>
+								<li><a href="news.html">Blog</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -541,14 +638,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/news_custom.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
