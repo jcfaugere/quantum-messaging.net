@@ -585,7 +585,7 @@ section
 .main_menu
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #003679;
 }
 .main_menu_container
 {
@@ -683,7 +683,7 @@ section
 }
 .main_menu_list li ul li a
 {
-	color: #FFFFFF;
+	color: #003679;
 	line-height: 40px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -736,7 +736,7 @@ section
 .main_menu_phone:hover span,
 .main_menu_email:hover span
 {
-	color: #FFFFFF;
+	color: #003679;
 }
 .main_menu_phone svg,
 .main_menu_email svg
@@ -761,7 +761,7 @@ section
 .main_menu_phone:hover svg path,
 .main_menu_email:hover svg path
 {
-	fill: #FFFFFF;
+	fill: #003679;
 }
 .main_menu_social
 {
@@ -818,12 +818,12 @@ section
 }
 .main_menu_social ul li:hover a i
 {
-	color: #FFFFFF;
+	color: #003679;
 }
 .main_menu_social ul li:hover
 {
-	border: solid 1px #FFFFFF;
-	box-shadow: 0 0 1px 0px #FFFFFF inset, 0 0 1px 0px #FFFFFF;
+	border: solid 1px #003679;
+	box-shadow: 0 0 1px 0px #003679 inset, 0 0 1px 0px #003679;
 }
 .main_menu_search
 {
@@ -1079,7 +1079,7 @@ section
 	bottom: -21px;
 	width: 122px;
 	height: 41px;
-	background: #FFFFFF;
+	background: #003679;
 	text-align: center;
 }
 .news_button a
