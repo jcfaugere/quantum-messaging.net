@@ -435,7 +435,7 @@ section
 
 .top_bar
 {
-	background: #FFFFFF;
+	background: #000000;
 }
 .top_bar_container
 {
@@ -457,7 +457,7 @@ section
 	line-height: 0.75;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: #242424;
+	color: #FFFFFF;
 }
 .logo_line_1 span
 {
@@ -585,7 +585,7 @@ section
 .main_menu
 {
 	width: 100%;
-	background: #003679;
+	background: #FFA800;
 }
 .main_menu_container
 {
@@ -683,7 +683,7 @@ section
 }
 .main_menu_list li ul li a
 {
-	color: #003679;
+	color: #000000;
 	line-height: 40px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -736,7 +736,7 @@ section
 .main_menu_phone:hover span,
 .main_menu_email:hover span
 {
-	color: #003679;
+	color: #000000;
 }
 .main_menu_phone svg,
 .main_menu_email svg
@@ -761,7 +761,7 @@ section
 .main_menu_phone:hover svg path,
 .main_menu_email:hover svg path
 {
-	fill: #003679;
+	fill: #000000;
 }
 .main_menu_social
 {
@@ -818,12 +818,12 @@ section
 }
 .main_menu_social ul li:hover a i
 {
-	color: #003679;
+	color: #000000;
 }
 .main_menu_social ul li:hover
 {
-	border: solid 1px #003679;
-	box-shadow: 0 0 1px 0px #003679 inset, 0 0 1px 0px #003679;
+	border: solid 1px #000000;
+	box-shadow: 0 0 1px 0px #000000 inset, 0 0 1px 0px #000000;
 }
 .main_menu_search
 {
@@ -1079,7 +1079,7 @@ section
 	bottom: -21px;
 	width: 122px;
 	height: 41px;
-	background: #003679;
+	background: #000000;
 	text-align: center;
 }
 .news_button a
