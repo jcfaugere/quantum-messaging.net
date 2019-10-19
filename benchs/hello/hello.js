@@ -1219,11 +1219,11 @@ function updateGlobalBufferAndViews(buf) {
 }
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 4864,
+    STACK_BASE = 4928,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 5247744,
-    DYNAMIC_BASE = 5247744,
-    DYNAMICTOP_PTR = 4672;
+    STACK_MAX = 5247808,
+    DYNAMIC_BASE = 5247808,
+    DYNAMICTOP_PTR = 4736;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1760,7 +1760,7 @@ var ASM_CONSTS = [];
 
 
 
-// STATICTOP = STATIC_BASE + 3840;
+// STATICTOP = STATIC_BASE + 3904;
 /* global initializers */ /*__ATINIT__.push();*/
 
 
@@ -1771,7 +1771,7 @@ var ASM_CONSTS = [];
 
 
 /* no memory initializer */
-var tempDoublePtr = 4848
+var tempDoublePtr = 4912
 assert(tempDoublePtr % 8 == 0);
 
 function copyTempFloat(ptr) { // functions, because inlining this code increases code size too much
@@ -1973,6 +1973,13 @@ function copyTempDouble(ptr) {
       abortOnCannotGrowMemory(requestedSize);
     }
 
+  function _gettimeofday(ptr) {
+      var now = Date.now();
+      HEAP32[((ptr)>>2)]=(now/1000)|0; // seconds
+      HEAP32[(((ptr)+(4))>>2)]=((now % 1000)*1000)|0; // microseconds
+      return 0;
+    }
+
   
   function _emscripten_memcpy_big(dest, src, num) {
       HEAPU8.set(HEAPU8.subarray(src, src+num), dest);
@@ -2023,7 +2030,7 @@ function nullFunc_vii(x) { abortFnPtrError(x, 'vii'); }
 
 var asmGlobalArg = {};
 
-var asmLibraryArg = { "___lock": ___lock, "___unlock": ___unlock, "___wasi_fd_write": ___wasi_fd_write, "__memory_base": 1024, "__table_base": 0, "_emscripten_get_heap_size": _emscripten_get_heap_size, "_emscripten_memcpy_big": _emscripten_memcpy_big, "_emscripten_resize_heap": _emscripten_resize_heap, "_fd_write": _fd_write, "abort": abort, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "demangle": demangle, "demangleAll": demangleAll, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "getTempRet0": getTempRet0, "jsStackTrace": jsStackTrace, "memory": wasmMemory, "nullFunc_ii": nullFunc_ii, "nullFunc_iidiiii": nullFunc_iidiiii, "nullFunc_iiii": nullFunc_iiii, "nullFunc_jiji": nullFunc_jiji, "nullFunc_vii": nullFunc_vii, "setTempRet0": setTempRet0, "stackTrace": stackTrace, "table": wasmTable, "tempDoublePtr": tempDoublePtr };
+var asmLibraryArg = { "___lock": ___lock, "___unlock": ___unlock, "___wasi_fd_write": ___wasi_fd_write, "__memory_base": 1024, "__table_base": 0, "_emscripten_get_heap_size": _emscripten_get_heap_size, "_emscripten_memcpy_big": _emscripten_memcpy_big, "_emscripten_resize_heap": _emscripten_resize_heap, "_fd_write": _fd_write, "_gettimeofday": _gettimeofday, "abort": abort, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "demangle": demangle, "demangleAll": demangleAll, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "getTempRet0": getTempRet0, "jsStackTrace": jsStackTrace, "memory": wasmMemory, "nullFunc_ii": nullFunc_ii, "nullFunc_iidiiii": nullFunc_iidiiii, "nullFunc_iiii": nullFunc_iiii, "nullFunc_jiji": nullFunc_jiji, "nullFunc_vii": nullFunc_vii, "setTempRet0": setTempRet0, "stackTrace": stackTrace, "table": wasmTable, "tempDoublePtr": tempDoublePtr };
 // EMSCRIPTEN_START_ASM
 var asm =Module["asm"]// EMSCRIPTEN_END_ASM
 (asmGlobalArg, asmLibraryArg, buffer);
