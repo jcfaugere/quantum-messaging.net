@@ -475,3 +475,21 @@
 {
 	
 }
+
+/* ---------------------------------------------------------------------- */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* For mobile phones: */
+.responsive_width {width: 50px;}
+
+  /* For tablets: */
+@media only screen and (min-width: 600px) {
+  .responsive_width  {width: 75px;}
+}
+  /* For desktop: */
+@media only screen and (min-width: 768px) {
+  .responsive_width {width: 100px%;}
+}
