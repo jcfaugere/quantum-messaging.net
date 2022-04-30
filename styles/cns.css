@@ -148,11 +148,13 @@ body {
     }
 }
 
-.imgnb {
+div.imgnb {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-.imgnb:hover {
+div.imgnb:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 a:visited{
     color:white;
