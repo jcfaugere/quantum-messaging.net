@@ -8,7 +8,8 @@
     <meta name="description" content="CryptoNext">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="long-term security, cryptography, postquantum, quantum-safe, quantumsafe, NIST, PQAT, Post-quantum advanced technologies, cryptonext, cryptonext-security" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
     <style>
       * {
       box-sizing: border-box;
@@ -151,6 +152,14 @@
       font-size: 36px;
       margin-left: 50px;
       }
+
+      @media only screen and (max-width: 500px)
+      {
+      .navbar {
+      background-color: red;
+      height: 0px;
+      }
+      }
     </style>
   </head>
   <body>
@@ -197,7 +206,7 @@
 	<a href="index.html">Home</a>
 	<a href="about.html">About Us</a>
 	<div class="dropdown">
-	  <button class="dropbtn">Dropdown 
+	  <button class="dropbtn">All Site 
 	    <i class="fa fa-caret-down"></i>
 	  </button>
 	  <div class="dropdown-content">
@@ -226,6 +235,8 @@
 	    </div>
 	  </div>
 	</div> 
+	<a href="#"><img align="top" height="18px" src="images/envelope.svg" alt="Mail"> mail</a>
+	<a style="color:white" href="mailto:contact@cryptonext-security.com">contact@cryptonext-security.com</a>
       </div>
       
       <table style="max-width:800px"  border="0">
@@ -309,5 +320,18 @@
       </table>
     </div>
 
+  <div w3-include-html="footer.html"></div> 
+  
+  <script>
+    includeHTML();
+  </script>
+  
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
   </body>
 </html>
