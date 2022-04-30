@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>CryptoNext: About Us</title>
     <link rel="icon" type="image/ico" href="images/logoicon.png" />
@@ -8,117 +8,15 @@
     <meta name="description" content="CryptoNext">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="long-term security, cryptography, postquantum, quantum-safe, quantumsafe, NIST, PQAT, Post-quantum advanced technologies, cryptonext, cryptonext-security" />
-
-    <style>
-      .jcf {
-      line-height: 1.1em;
-      text-align:justify;
-      background-color:black;
-      color:white;
-      }
-    </style>
-    <style type="text/CSS">
-      a:visited{
-      color:white;
-      }
-      a{
-      color:white;
-      }
-      a:hover{
-      color:orange;
-      }
-      #menu {
-      height:24px;
-      }
-      #menu ul {
-      margin:0;
-      padding:0;
-      list-style-type:none;
-      text-align:center;
-      }
-      #menu li {
-      float:left;
-      margin:auto;
-      padding:0;
-      background-color:orange;
-      }
-      #menu li a {
-      display:block;
-      width:90px;
-      color:black;
-      text-decoration:none;
-      padding:20px;
-      }
-      #menu li a:hover {
-      color:white;
-      }
-      #menu ul li ul {
-      display:none;
-      }
-      #menu ul li:hover ul {
-      display:block;
-      }
-      #menu li:hover ul li {
-      float:none;
-      }
-</style>
-    <link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/cns.css">
   </head>
+  <script src="js/code.js"></script>
   <body>
 
     <div style="background-color:black;color:white;overflow:auto;">
-
-      <table width="100%" border="0">
-	<tbody>
-	  <tr>
-	    <td width="20%"> <img src="images/cryptonext_logo.png" width="220" height="50" alt="CryptoNext"/> </td>
-	    <td width="60%"> &nbsp; </td>
-	    <td width="20%">
-	      <ul>
-		<li>NIST Submissions: 83</li>
-		<li>NIST Round 2: 26</li>
-		<li>NIST Round 3: 7+8(alternate)</li>
-	      </ul>
-	    </td>
-	  </tr>
-	</tbody>
-      </table>
-
-    <div class="navbar">
-      <div class="logo"><a href="#">Menu</a></div>
-      <button class="burger" type="button"><span></span><span></span><span></span></button>
-      <ul class="menu">
-        <li>Home</li>
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact Me</li>
-      </ul>
-
-      <table width="100%" border="0">
-	  <tbody>
-	    <div id="menu">
-	      <ul>
-		<li><a href="#">HOME</a>
-		  <ul>
-		    <li><a href="index.html">Cryptography</a></li>
-		    <li><a href="about.html">About Us</a></li>
-		  </ul>
-		</li>
-		<li><a href="about.html">ABOUT US</a></li>
-		<li><a href="services.html">SOLUTIONS</a></li>
-		<li><a href="portfolio.html">PORTFOLIO</a></li>
-		<li><a href="news.html">NEWS</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
-		<li><a href="#"><img align="top" height="18px" src="images/envelope.svg" alt="Mail"> mail</a>
-		  <ul>
-		    <li><a href="mailto:contact@cryptonext-security.com">contact@cryptonext-security.com</a></li>
-		  </ul>
-		</li>
-	    </ul>
-	    </div>
-	  </tbody>
-      </table>
-    </div>
+      <div w3-include-html="bar.html"></div> 
 
       <table style="max-width:800px"  border="0">
 	<tbody>
@@ -165,7 +63,11 @@
 	  <tr>
 	    <td style="text-align:center;"><img src="images/grosmaitre.jpg" width="135" alt="CEO"/></td>
 	    <td>&nbsp;</td>
-	    <td style="text-align:center;"><img src="images/faugerejc.png" width="135" alt="CTO"/></td>
+	    <td style="text-align:center;">
+	      <div class="imgnb">
+		<img src="images/faugerejc.png" width="130" alt="CTO"/>
+	      </div>
+	    </td>
 	    <td>&nbsp;</td>
 	    <td style="text-align:center;"><img src="images/dorival2.png" width="135" alt="CRO"/></td>
 	  </tr>
@@ -201,33 +103,18 @@
       </table>
     </div>
 
+  <div w3-include-html="footer.html"></div> 
+  
+  <script>
+    includeHTML();
+  </script>
 
-
-    
-
-    <footer class=jcf>
-      <table width="100%" border="0">
-	<tbody>
-	  <tr>
-	    <td width="100% "><hr size=3 color="white"></td>
-	  </tr>
-	</tbody>
-      </table>
-      <table width="100%" border="0">
-	<tbody>
-	  <tr>
-	    <td width="20%"> <img src="images/cryptonext_logo.png" width="220" height="50" alt="CryptoNext"/> </td>
-	    <td width="60%"> <i>Our mission is to deploy the next generation of cryptographic standards that will make your IT infrastructures resilient against quantum computers.</i> </td>
-	    <td width="20%">
-	      <ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	      </ul>
-	    </td>
-	  </tr>
-	</tbody>
-      </table>
-    </footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
   </body>
 </html>
