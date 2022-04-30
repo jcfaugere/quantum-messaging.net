@@ -1,152 +1,313 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>CryptoNext: About Us</title>
+    <link rel="icon" type="image/ico" href="images/logoicon.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CryptoNext">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="long-term security, cryptography, postquantum, quantum-safe, quantumsafe, NIST, PQAT, Post-quantum advanced technologies, cryptonext, cryptonext-security" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      
+      body {
+      margin: 0;
+      }
+      
+      .jcf {
+      line-height: 1.1em;
+      text-align:justify;
+      background-color:black;
+      color:white;
+      }
+      
+      .navbar {
+      overflow: hidden;
+      background-color: orange;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a {
+      float: left;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      
+      .dropdown {
+      float: left;
+      overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit;
+      margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: orange;
+      }
+      
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
 
-body {
-  margin: 0;
-}
+      .dropdown-content .header {
+      background: orange;
+      padding: 16px;
+      color: white;
+      }
+      
+      .dropdown:hover .dropdown-content {
+      display: block;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      background-color: #ccc;
+      height: 250px;
+      }
+      
+      .column a {
+      float: none;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
+      .column a:hover {
+      background-color: #ddd;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 450px) {
+      .column {
+      width: 100%;
+      height: auto;
+      }
+      }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+      .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      }
+      
+      .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+      color: orange;
+      }
+      
+      .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit;
-  margin: 0;
-}
+    <div style="background-color:black;color:white;overflow:auto;">
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: orange;
-}
+      <table width="100%" border="0">
+	<tbody>
+	  <tr>
+	    <td width="40%"> <img src="images/cryptonext_logo.png" width="220" height="50" alt="CryptoNext"/> 
+	      <script>
+		function openNav() {
+		document.getElementById("Burger").style.width = "200px";
+		}
+		
+		function closeNav() {
+		document.getElementById("Burger").style.width = "0";
+		}
+	      </script>
+	      <div id="Burger" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Portfolio</a>
+		<a href="#">Solutions</a>
+		<a href="#">Contact Us</a>
+	      </div>
+	      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	    </td>
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+	    <td width="20%"> &nbsp; </td>
+	    <td width="40%">
+	      <ul>
+		<li>NIST Submissions: 83</li>
+		<li>NIST Round 2: 26</li>
+		<li>NIST Round 3: 7+8(alternate)</li>
+	      </ul>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
 
-.dropdown-content .header {
-  background: orange;
-  padding: 16px;
-  color: white;
-}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  background-color: #ccc;
-  height: 250px;
-}
-
-.column a {
-  float: none;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.column a:hover {
-  background-color: #ddd;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <div class="header">
-        <h2>Mega Menu</h2>
-      </div>   
-      <div class="row">
-        <div class="column">
-          <h3>Category 1</h3>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-          <h3>Category 2</h3>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <div class="column">
-          <h3>Category 3</h3>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+      <div class="navbar">
+	<a href="index.html">Home</a>
+	<a href="about.html">About Us</a>
+	<div class="dropdown">
+	  <button class="dropbtn">Dropdown 
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+	    <div class="header">
+              <h2>All</h2>
+	    </div>   
+	    <div class="row">
+              <div class="column">
+		<h3>Cat 1</h3>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+              </div>
+              <div class="column">
+		<h3>Cat 2</h3>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+              </div>
+              <div class="column">
+		<h3>Cat 3</h3>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+              </div>
+	    </div>
+	  </div>
+	</div> 
       </div>
+      
+      <table style="max-width:800px"  border="0">
+	<tbody>
+	  <tr>
+	    <td width="100%"> <h2 style="margin-bottom: -0.5em;"><strong>About CryptoNext Security </h2></strong></td>
+	  </tr>
+	  <tr>
+	    <td width="100%"> <p class=jcf>The quantum computer disruption is an opportunity, but also a threat to cybersecurity. Quantum computer will be able to break in few minutes the public key crypto-systems that secure Internet networks (https, IPSec VPN), mobile messaging apps (Signal, WhatsApp, …), digital signature protocols, blockchain applications, etc … A practical approach against this threat is to build quantum-resistant public key crypto-systems.</p>
+
+	      <p class=jcf>CryptoNext Security is a spin-off of INRIA Paris, CNRS and SU, founded in 2019 by Jean-Charles Faugère and Ludovic Perret, well-known researchers with over 15 years of experience in post quantum cryptography.  As a software company CryptoNext Security’s mission is to support private and public organizations to smoothly manage the quantum threat with its quantum safe solutions.</p>
+
+	      <p class=jcf>CryptoNext already offers « combat proven », quantum resistant, hybrid, and crypto-agile solutions for various industries (defense, finance, infrastructure, …) and technologies (HSM, VPN, PKI, IoT, blockchains, communication app, business software, …) in order to migrate IT infrastructures and products to quantum resistant level. </p>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td width="100%" class=jcf> <h2 style="margin-bottom: -0.1em;margin-top: -0.1em;"><strong>Executive Team </h2></strong></td>
+	  </tr>
+	</tbody>
+      </table>
+
+      <table style="max-width:800px"  border="0">
+	<tbody>
+	  <tr>
+	    <td width="31% "><hr size=2 color="white"></td>
+	    <td width="3% ">&nbsp;</td>
+	    <td width="31% "><hr size=2 color="white"></td>
+	    <td width="3% ">&nbsp;</td>
+	    <td width="31% "><hr size=2 color="white"></td>
+	  </tr>
+	  <tr>
+	    <td><strong>Florent GROSMAITRE</strong></td>
+	    <td>&nbsp;</td>
+	    <td><strong>Jean-Charles FAUGÈRE</strong></td>
+	    <td>&nbsp;</td>
+	    <td><strong>Christian d’ORIVAL</strong></td>
+	  </tr>
+	  <tr>
+	    <td>Chief Executive Officer - CEO</td>
+	    <td>&nbsp;</td>
+	    <td>Chief Technical Officer - CTO &amp; Co-founder</td>
+	    <td>&nbsp;</td>
+	    <td>Chief Revenue Officer - CRO</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><img src="images/grosmaitre.jpg" width="135" alt="CEO"/></td>
+	    <td>&nbsp;</td>
+	    <td style="text-align:center;"><img src="images/faugerejc.png" width="135" alt="CTO"/></td>
+	    <td>&nbsp;</td>
+	    <td style="text-align:center;"><img src="images/dorival2.png" width="135" alt="CRO"/></td>
+	  </tr>
+	  <tr>
+	    <td width="31% "><hr size=2 color="white"></td>
+	    <td width="3% ">&nbsp;</td>
+	    <td width="31% "><hr size=2 color="white"></td>
+	    <td width="3% ">&nbsp;</td>
+	    <td width="31% "><hr size=2 color="white"></td>
+	  <tr valign="top">
+	    <td>      <p class=jcf>Florent Grosmaitre joined CryptoNext Security as Chief Executive Officer in 2021 to complete the co-founders team.</p>
+	      <p class=jcf>Florent has more than 15 years of entrepreneurial experience ; he founded and managed several startups and SMEs in France, Europe and Russia, especially in the Software industry. </p>
+	      <p class=jcf>Before joining CryptoNext Security, Florent was in charge of piloting the company Actibase, specialized in software for medical imaging platforms and sold it in 2020 to a European leader. Florent brings its experience to structure the growth of CryptoNext Security from a seed startup to a scale-up. </p>
+	      <p class=jcf> Florent is graduate of the Ecole Nationale d’Arts et Métiers engineering school and of the HEC Entrepreneur Master.<p>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td>
+	      <p class=jcf> Jean-Charles Faugère is the co-founder and Chief Technical Officer of CryptoNext. Jean-Charles Faugère is a pioneer in the area of quantum-safe cryptography. Jean-Charles is well known for having developed efficient algorithms and high-performance software that permit to assess the security of a large variety of quantum-safe cryptosystems.  Jean-Charles
+		is the co-author of several submissions to the on-going NIST post-quantum standardization process.</p>
+
+	      <p class=jcf>Jean-Charles was research director at INRIA and leader of a joint team between INRIA Paris and Sorbonne University. He has been awarded by the Seymour Cray prize for a contribution to high-performance software and the Atos &amp; Joseph Fourier prize in the area of quantum technologies for his contributions to quantum-safe cryptography.</p>
+	      <p class=jcf>Jean-Charles Faugère is a former student of École Normale Supérieure Ulm (mathematics)<p>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td>
+	      <p class=jcf>Christian d’Orival joined CryptoNext Security as Chief Revenue Officer in 2022 with responsibilities encompassing company’s Sales and Marketing.</p>
+
+	      <p class=jcf>He brings more than 30 years of executive, business development and revenue operations management experience to the team with prior roles including President & CEO at Luceor, COO at DenyAll (Rhode &amp; Schwarz Cybersecurity), SEMEA Enterprise Sales Managing Director at Juniper Networks and SVP Sales, Marketing & Services at OST (acquired by Newbridge). Christian has also been instrumental to the EMEA setup and sales development for several US based companies such as Peribit Networks, Aspect Communications or SGI.</p>
+	      <p class=jcf>Christian is graduate of engineering from Institut Supérieur d’Electronique de Paris.</p>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
     </div>
-  </div> 
-</div>
 
-<div style="padding:16px">
-  <h3>Responsive Mega Menu </h3>
-  <p>(Full-width dropdown in navbar)</p>
-  <p>Hover over the "Dropdown" link to see the mega menu.</p>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
-
-</body>
+  </body>
 </html>
