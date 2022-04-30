@@ -25,3 +25,11 @@ function includeHTML() {
     }
   }
 };
+
+function openNav() {
+    document.getElementById("Burger").style.width = "200px";
+};
+
+function closeNav() {
+    document.getElementById("Burger").style.width = "0";
+};
