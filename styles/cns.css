@@ -152,6 +152,8 @@ body {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+.imgnb:hover {
+}
 a:visited{
     color:white;
 }
