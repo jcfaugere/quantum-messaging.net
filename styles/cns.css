@@ -15,7 +15,7 @@ body {
       
 .navbar {
     overflow: hidden;
-    background-color: orange;
+    background-color: #f2910c;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .dropdown-content .header {
-    background: orange;
+    background: #f2910c;
     padding: 16px;
     color: white;
 }
@@ -155,5 +155,5 @@ a{
     color:white;
 }
 a:hover{
-    color:orange;
+    color:#f2910c;
 }
