@@ -140,7 +140,7 @@ body {
     margin-left: 50px;
 }
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 550px)
 {
     .navbar {
 	background-color: red;
