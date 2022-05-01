@@ -83,3 +83,31 @@
 	font-size: 18px;
 	color: #FFFFFF;
 }
+.home_slider_nav
+{
+	position: absolute;
+	top: 56.32%;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background: #939393;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	z-index: 10;
+}
+.home_slider_prev
+{
+	left: 177px;
+}
+.home_slider_next
+{
+	right: 177px;
+}
+.home_slider_nav:hover
+{
+	background: #ffa800;
+}
