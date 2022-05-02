@@ -170,3 +170,8 @@ a{
 a:hover{
     color:#f2910c;
 }
+
+video {
+  max-width: 100%;
+  height: auto;
+}
