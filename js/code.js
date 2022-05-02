@@ -27,7 +27,7 @@ function includeHTML() {
 };
 
 function openNav() {
-    document.getElementById("Burger").style.width = "200px";
+    document.getElementById("Burger").style.width = "150px";
 };
 
 function closeNav() {
