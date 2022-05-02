@@ -66,11 +66,12 @@
     padding-top: 74px;
     padding-bottom: 55px;
     background: rgba(17,16,14,0.83);
+    text-align: center;
 }
 .home_slider_content h1
 {
     font-family: 'gill', sans-serif;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 1.1;
     color: #FFFFFF;
 }
@@ -98,6 +99,8 @@
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
     z-index: 10;
+    -ms-flex-align:center;
+    align-items:center
 }
 .home_slider_prev
 {
