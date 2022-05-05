@@ -33,3 +33,24 @@ function openNav() {
 function closeNav() {
     document.getElementById("Burger").style.width = "0";
 };
+
+function NEWS( date, titre, txt, img, link, tag )
+{
+    document.write("         <div class=\"mycol-4 left\"> 	  <table class=\"news_table\" border=\"0\" cellspacing=\"0\"> 	    <tr> 	      <td align=\"right\"> 		<a href=",
+		   img,
+		   "><img src=",
+		   img,
+		   " style=\"width: 300px; height: 300px\" alt=",
+		   "",
+		   "></a> 	      </td> 	    </tr> 	    <tr> 	      <td> 		<h3>",
+		   titre,
+		   "</h3> 		<p>",
+		   txt,
+		   "</p> 	      </td> 	    </tr> 	  </table> 	  <div class=\"news_date\">",
+		   date,
+		   "</div> 	  <div class=\"news_button\"><a href=",
+		   link,
+		   ">",
+		   tag,
+		   "</a></div> 	</div>\n");
+}
