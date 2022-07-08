@@ -334,7 +334,7 @@ $(document).ready(function()
 							}
 						}
 					});
-					bar.text.style.fontFamily = '"gill", sans-serif';
+					bar.text.style.fontFamily = '"Helvetica", sans-serif';
 					bar.text.style.fontSize = '18px';
 					bar.text.style.fontWeight = 'bold';
 					bar.text.style.color = "#212121";

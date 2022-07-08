@@ -40,7 +40,7 @@ function NEWS( date, titre, txt, img, link, tag )
 		   img,
 		   "><img src=",
 		   img,
-		   " style=\"width: 300px; height: 300px\" alt=",
+		   " style=\"width: 300px;\" alt=",
 		   "",
 		   "></a> 	      </td> 	    </tr> 	    <tr> 	      <td> 		<h3>",
 		   titre,

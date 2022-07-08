@@ -70,7 +70,7 @@
 }
 .home_slider_content h1
 {
-    font-family: 'gill', sans-serif;
+    font-family: Helvetica;
     font-size: 60px;
     line-height: 1.1;
     color: #FFFFFF;
@@ -80,7 +80,7 @@
     width: 72%;
     margin: 0 auto;
     margin-top: 15px;
-    font-family: 'gill', sans-serif;
+    font-family: Helvetica;
     font-size: 18px;
     color: #FFFFFF;
 }
