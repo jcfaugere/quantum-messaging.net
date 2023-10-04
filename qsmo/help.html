@@ -9,7 +9,7 @@
 		color:#fff;
 		background:#000;
 		margin:1em auto;
-		max-width:40em;
+		max-width:50em;
 		padding:0 .62em;
 		font:1.2em/1.62 sans-serif
 	}
@@ -20,8 +20,6 @@
   		display: block;
   		margin-left: auto;
   		margin-right: auto;
-		height: 40%;
-  		width: 40%
 	}
 	video {
 		display: block;
@@ -38,18 +36,82 @@
 </style>
 <article>
 	<header>
+	<center>
 	<h1>QSMO Online Help</h1>
+	</center>
+	<hr>
 	</header>
-	<h2>QSMO Configuration: The First Things To Do</h2>
-	<h3>Certificates</h3>
-	<p>In order to use the QSMO plugin you first need to configure it.<br>
-	During the configuration phase, you will need to have your three following certificates:</p>
+
+	<h2>Outline</h2>
+	<ul>
+		<li><a href="#configuration">QSMO Configuration</a></li>
+		<ul>
+			<li><a href="#configuration-requirements">Requirements</a></li>
+			<li><a href="#configuration-config">Configuration</a></li>
+			<ul>
+				<li><a href="#configuration-config-signature">Signature Certificate Configuration</a></li>
+			</ul>
+		</ul>
+		<li><a href="#encsign">Encrypt and/or Sign Emails Using QSMO</a></li>
+		<ul>
+			<li><a href="#encsign-sign">Sign an Email</a></li>
+			<li><a href="#encsign-enc">Encrypt an Email</a></li>
+			<li><a href="#encsign-enc-sign">Encrypt and Sign an Email</a></li>
+		</ul>
+		<li><a href="#managing-qsmo">Managing QSMO</a></li>
+		<ul>
+			<li><a href="#managing-qsmo-certificates">Manage Certificates</a></li>
+			<li><a href="#managing-qsmo-settings">Settings</a></li>
+			<ul>
+				<li><a href="#managing-qsmo-passphrases">Update Passphrases</a></li>
+				<li><a href="#managing-qsmo-reset">Reset QSMO</a></li>
+			</ul>
+		</ul>
+	</ul>
+
+	<hr>
+
+	<h2 id="configuration">QSMO Configuration</h2>
+	<h3 id="configuration-requirements">Requirements</h3>
+	In order to use QSMO, you first need to configure it. During the configuration phase, you will need to have your three following certificates:
+	<ul>
+	<li>a PKCS#12 file in PEM format of your signature certificate,</li>
+	<li>a PKCS#12 file in PEM format of your KEM certificate,</li>
+	<li>a PKCS#12 file in PEM format of your traditional KEM certificate.</li>
+	</ul>
+	<h3 id="configuration-config">Configuration</h3>
+	Once QSMO is installed, you have to configure it.<br>First, launch Outlook.
+	<h4 id="configuration-config-signature">Signature Certificate Configuration</h4>
+	A pop-up appears, informing you that the configuration of the signature certificate will start.
+	<img src="data/configuration_signature.PNG">
+	After clicking on <em>OK</em>, you have to select the PKCS#12 file in PEM format of your signature certificate, and then click on <em>Open</em>, as illustrated below.
+	<img src="data/configuration_signature_certificate.PNG">
+	In order to finish the signature certificate configuration, you have to enter the passphrase corresponding to the provided signature certificate and validate it by pressing <em>OK</em>.
+	<img src="data/configuration_signature_passphrase.PNG">
 	<br>
-	<h2>How to Encrypt and/or Sign Your Emails?</h2>
-	<h3>Encrypt an email</h3>
-	<h3>Sign an email</h3>
-	<h3>Encrypt and Sign an email</h3>
+
+	<h2 id="encsign">Encrypt and/or Sign Emails Using QSMO</h2>
+	We assume you have correctly configured QSMO with your three certificates (the signature certificate, the KEM certificate, and the traditional KEM certificate).
+	<h3 id="encsign-sign">Sign an Email</h3>
+	Since the signature of an email does not depend on the receiver, the signature is activated by default for each email sent. In order to deactivate the signature for an email you are writting, you have to unselect the <em>signature</em> option in the QSMO part of the Outlook ribbon as illustrated below.
+	<img src="data/email_signature.PNG">
 	<br>
-	<h2>QSMO Managing</h2>
+	<h3 id="encsign-enc">Encrypt an Email</h3>
+	To encrypt an email you are writting, you have to select the <em>encryption</em> option in the QSMO part of the Outlook ribbon as illustrated below.
+	<img src="data/email_encryption.PNG">
+	Note that to encrypt an email for a set of receivers, you have to own the KEM certificate of each receiver. In order to manage KEM certificates, read the <i>Managing KEM Certificates</i> part of this online help.
+	<br>
+	<h3 id="encsign-enc-sign">Encrypt and Sign an Email</h3>
+	To encrypt and sign an email you are writting, you have to select the <em>encryption</em> and the <em>signature</em> options in the QSMO part of the Outlook ribbon as illustrated below.
+	<img src="data/email_signature_encryption.PNG">
+	Note that to encrypt an email for a set of receivers, you have to own the KEM certificate of each receiver. In order to manage KEM certificates, read the <i>Managing KEM Certificates</i> part of this online help.
+	<br>
+
+	<h2 id="managing-qsmo">Managing QSMO</h2>
+	QSMO provides the essential to manage certificates, passphrases, and reset client configuration. We explain these functionalities in this section.
+	<h3 id="managing-qsmo-certificates">Manage Certificates</h3>
+	<h3 id="managing-qsmo-settings">Settings</h3>
+	<h4 id="managing-qsmo-passphrases">Update Passphrases</h4>
+	<h4 id="managing-qsmo-reset">Reset QSMO</h4>
 	<br>
 </article>
