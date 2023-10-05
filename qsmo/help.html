@@ -20,6 +20,7 @@
   		display: block;
   		margin-left: auto;
   		margin-right: auto;
+		padding: .62em
 	}
 	video {
 		display: block;
@@ -50,6 +51,8 @@
 			<li><a href="#configuration-config">Configuration</a></li>
 			<ul>
 				<li><a href="#configuration-config-signature">Signature Certificate Configuration</a></li>
+				<li><a href="#configuration-config-qs-kem">Quantum-Safe KEM Certificate Configuration</a></li>
+				<li><a href="#configuration-config-trad-kem">Traditional KEM Certificate Configuration</a></li>
 			</ul>
 		</ul>
 		<li><a href="#encsign">Encrypt and/or Sign Emails Using QSMO</a></li>
@@ -80,14 +83,31 @@
 	<li>a PKCS#12 file in PEM format of your traditional KEM certificate.</li>
 	</ul>
 	<h3 id="configuration-config">Configuration</h3>
-	Once QSMO is installed, you have to configure it.<br>First, launch Outlook.
-	<h4 id="configuration-config-signature">Signature Certificate Configuration</h4>
+	Once QSMO is installed, you have to configure it.<br>First, launch Outlook, then you will have to configure your three certificates: the quantum-safe signature certificate, the quantum-safe KEM certificate, and the traditional KEM certificate.
+
+	<h4 id="configuration-config-signature">Signature Configuration</h4>
 	A pop-up appears, informing you that the configuration of the signature certificate will start.
 	<img src="data/configuration_signature.PNG">
 	After clicking on <em>OK</em>, you have to select the PKCS#12 file in PEM format of your signature certificate, and then click on <em>Open</em>, as illustrated below.
 	<img src="data/configuration_signature_certificate.PNG">
 	In order to finish the signature certificate configuration, you have to enter the passphrase corresponding to the provided signature certificate and validate it by pressing <em>OK</em>.
 	<img src="data/configuration_signature_passphrase.PNG">
+
+	<h4 id="configuration-config-qs-kem">Encryption Configuration</h4>
+	The configuration of the encryption functionality consists in two parts: the configuration of the quantum-safe KEM certificate and the configuration of the traditional KEM certificate.<br>
+	The configuration starts with a pop-up informing you that the configuration of the quantum-safe KEM certificate will start.
+	<img src="data/configuration_encryption.PNG">
+	<h5 id="configuration-config-qs-kem">Qunatum-Safe KEM Certificate Configuration</h5>
+	After clicking on <em>OK</em>, you have to select the PKCS#12 file in PEM format of your quantum-safe KEM certificate, and then click on <em>Open</em>, as illustrated below.
+	<img src="data/configuration_qs_kem_certificate.PNG">
+	In order to finish the quantum-safe KEM certificate configuration, you have to enter the passphrase corresponding to the provided quantum-safe KEM certificate and validate it by pressing <em>OK</em>.
+	<img src="data/configuration_qs_kem_passphrase.PNG">
+
+	<h5 id="configuration-config-trad-kem">Traditional KEM Certificate Configuration</h5>
+	After the configuration of the quantum-safe KEM certificate, you have to select the PKCS#12 file in PEM format of your traditional KEM certificate, and then click on <em>Open</em>, as illustrated below.
+	<img src="data/configuration_trad_kem_certificate.PNG">
+	In order to finish the traditional KEM certificate configuration, you have to enter the passphrase corresponding to the provided traditional KEM certificate and validate it by pressing <em>OK</em>.
+	<img src="data/configuration_trad_kem_passphrase.PNG">
 	<br>
 
 	<h2 id="encsign">Encrypt and/or Sign Emails Using QSMO</h2>
