@@ -113,16 +113,16 @@
 	<h2 id="encsign">Encrypt and/or Sign Emails Using QSMO</h2>
 	We assume you have correctly configured QSMO with your three certificates (the signature certificate, the KEM certificate, and the traditional KEM certificate).
 	<h3 id="encsign-sign">Sign an Email</h3>
-	Since the signature of an email does not depend on the receiver, the signature is activated by default for each email sent. In order to deactivate the signature for an email you are writting, you have to unselect the <em>signature</em> option in the QSMO part of the Outlook ribbon as illustrated below.
+	Since the signature of an email does not depend on the receiver, the signature is activated by default for each email sent. In order to deactivate the signature for an email you are writting, you have to unselect the <em>signature</em> option in the QSMO section of the Outlook ribbon as illustrated below.
 	<img src="data/email_signature.PNG">
 	<br>
 	<h3 id="encsign-enc">Encrypt an Email</h3>
-	To encrypt an email you are writting, you have to select the <em>encryption</em> option in the QSMO part of the Outlook ribbon as illustrated below.
+	To encrypt an email you are writting, you have to select the <em>encryption</em> option in the QSMO section of the Outlook ribbon as illustrated below.
 	<img src="data/email_encryption.PNG">
 	Note that to encrypt an email for a set of receivers, you have to own the KEM certificate of each receiver. In order to manage KEM certificates, read the <i>Managing KEM Certificates</i> part of this online help.
 	<br>
 	<h3 id="encsign-enc-sign">Encrypt and Sign an Email</h3>
-	To encrypt and sign an email you are writting, you have to select the <em>encryption</em> and the <em>signature</em> options in the QSMO part of the Outlook ribbon as illustrated below.
+	To encrypt and sign an email you are writting, you have to select the <em>encryption</em> and the <em>signature</em> options in the QSMO section of the Outlook ribbon as illustrated below.
 	<img src="data/email_signature_encryption.PNG">
 	Note that to encrypt an email for a set of receivers, you have to own the KEM certificate of each receiver. In order to manage KEM certificates, read the <i>Managing KEM Certificates</i> part of this online help.
 	<br>
@@ -130,8 +130,25 @@
 	<h2 id="managing-qsmo">Managing QSMO</h2>
 	QSMO provides the essential to manage certificates, passphrases, and reset client configuration. We explain these functionalities in this section.
 	<h3 id="managing-qsmo-certificates">Manage Certificates</h3>
+	In the context of the post-quantum cryptography, we need seperate certificates for signature and encryption. Hence, QSMO provides managing KEM certificates for recipients. We recall that we use two KEM certificates for each recipient: one quantum-safe KEM certificate, and one traditional KEM certificate.<br>
+	To view the current recipients for whom you have imported KEM certificates, or to import new KEM certificates for a recipient, click on <i>Manage certificates</i> in the QSMO section of the Outlook ribbon.
+	<img src="data/qsmo-manage-certificates.PNG">
+	This show you the current recipients for whom you have imported KEM certificates.
+	<img src="data/manage-certificates.PNG">
+	To import a pair of KEM certificates of a recipient, click on <i>Add KEM certificates</i>. A pop-up appears, informing you to select first the quantum-safe KEM certificate, then the traditional KEM certificate of the recipient.
+	<img src="data/import-certificates-info.PNG">
+	Select the quantum-safe KEM certificate then the traditional KEM certificate.
+	<img src="data/import-qs.PNG">
+	<img src="data/import-trad.PNG">
+	At the end of this phase, you will see a new email address in the list, corresponding to the email address associated to the two KEM certificates that you have just added.
+	<img src="data/alice-cert.PNG">
 	<h3 id="managing-qsmo-settings">Settings</h3>
+	To access QSMO settings, click on <em>Settings</em> in the QSMO section of the Outlook ribbon.
+	<img src="data/qsmo-settings.PNG">
 	<h4 id="managing-qsmo-passphrases">Update Passphrases</h4>
+	Sometimes, you will need to reset the passphrases entered at the starting of QSMO because you made a typo typically. This error will be only noticed you during a signing or an encryption process. Hence, to update the passphrases set during this current session, you can go the settings of QSMO to reset the considered wrong passphrase.
+	<img src="data/.PNG">
 	<h4 id="managing-qsmo-reset">Reset QSMO</h4>
+	QSMO allows to reset entirely the plugin to change used certificates or to correct a wrong configuration. By clicking on <em>Reset QSMO</em> you will play again the configuration phase described <a href="#configuration">here</a>.
 	<br>
 </article>
